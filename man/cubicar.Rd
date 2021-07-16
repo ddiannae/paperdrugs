@@ -13,7 +13,7 @@ cubicar(x)
 un numero cubico
 }
 \description{
-Cubicar un numero
+Revisa que la entrada sea numerica
 }
 \examples{
 cubicar(2)
