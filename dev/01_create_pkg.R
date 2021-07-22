@@ -18,7 +18,6 @@ remotes::install_cran(
     c(
         "available",
         "BiocManager",
-        "biocthis",
         "devtools",
         "knitr",
         "pkgdown",
