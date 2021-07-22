@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/ddiannae/paperdrugs/branch/main/graph/badge.svg)](https://codecov.io/gh/ddiannae/paperdrugs?branch=main)
 <!-- badges: end -->
 
-The goal of `paperdrugs` is to ...
+`paperdrugs` is an R package to obtain pharmaceutical suggestions for altered genes. It requires the expression profiles of two different phenotypes: one will be used as the "healthy" phenotype and the other as the clinical condition. `paperdrugs` will identified altered biological pathways and genes with altered expression in those pathways. Those genes will be used to query DGIdb to obtain drugs that will potentially revert or burst genes' function.
 
 ## Installation instructions
 
@@ -40,40 +40,6 @@ And the development version from [GitHub](https://github.com/ddiannae/paperdrugs
 
 ```{r 'install_dev', eval = FALSE}
 BiocManager::install("ddiannae/paperdrugs")
-```
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example, eval = requireNamespace('paperdrugs')}
-library("paperdrugs")
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
-
-## Citation
-
-Below is the citation output from using `citation('paperdrugs')` in R. Please
-run this yourself to check for any updates on how to cite __paperdrugs__.
-
-```{r 'citation', eval = requireNamespace('paperdrugs')}
-print(citation('paperdrugs'), bibtex = TRUE)
-```
 
 Please note that the `paperdrugs` was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.
 

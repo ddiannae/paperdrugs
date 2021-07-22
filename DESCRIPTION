@@ -1,18 +1,29 @@
 Package: paperdrugs
-Title: Drugs suggestions for altered genes
+Title: Pharmaceutical suggestions for altered genes
 Version: 0.99.0
 Date: 2021-07-16
 Authors@R: 
-    person(given = "Diana",
-           family = "García",
+    c(person(given = "Diana",
+           family = "García-Cortés",
            role = c("aut", "cre"),
-           email = "diana.gco@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: The package suggests drugs for altered genes.
+           email = "dgarcia@inmegen.edu.mx",
+           comment = c(ORCID = "0000-0003-1562-7319")),
+    person(given = "Guillermo",
+           family = "De Anda-Jáuregui",
+           role = c("aut"),
+           email = "dgdeanda@inmegen.edu.mx",
+           comment = c(ORCID = "0000-0003-1562-7319")))
+Description: Paperdrugs is a package to get pharmaceutical 
+    suggestions for altered genes identified when comparing two
+    expression profiles. The package identifies significally 
+    altered biological pathways and the genes with altered expression
+    in those pathways. Those genes serve as potential drug targets
+    and a search in DGIdb is performed. The obtained suggestions 
+    are rated according to their effect on the target gene.
 License: Artistic-2.0
 URL: https://github.com/ddiannae/paperdrugs
 BugReports: https://support.bioconductor.org/t/paperdrugs
-biocViews: Software
+biocViews: Software, BiologicalQuestion
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
